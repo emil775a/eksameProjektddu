@@ -7,7 +7,7 @@ public class Jump : MonoBehaviour
 {
 
     Rigidbody player;
-    private float jumpForce = 7.5f; 
+    public float jumpForce = 7.5f; 
     private bool onGround;
 
     void Start()
