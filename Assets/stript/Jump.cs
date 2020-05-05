@@ -12,13 +12,18 @@ public class Jump : MonoBehaviour
 
     void Start()
     {
+        foreach (var e in Input.GetJoystickNames())
+        {
+            Debug.Log("joystick: " + e);
+        }
+//        Debug.Log(Input. ().Length);
         player = GetComponent<Rigidbody>();
         onGround = true;
     }
 
     void Update()
     {
-        if (Input.GetButton("Jump") && onGround == true)
+        if (Input.GetButton("JumpController") && onGround == true)
         {
             player.velocity = new Vector3(0f, jumpForce, 0f);
             onGround = false;
