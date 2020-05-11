@@ -127,7 +127,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh22324
+  m_Name: pb_Mesh15774
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -403,7 +403,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1077272120}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 7968db931e17e8f4187710302041b998, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -4535,7 +4535,7 @@ PrefabInstance:
     - target: {fileID: 3263232506072807971, guid: 098a522242e0422498bd5353291a1113,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3263232506072807971, guid: 098a522242e0422498bd5353291a1113,
         type: 3}
@@ -4654,6 +4654,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2250375731996542706, guid: 1eafbc21e533cd84489f2cab26e93dea,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 7968db931e17e8f4187710302041b998,
+        type: 2}
     - target: {fileID: 2250375731996542717, guid: 1eafbc21e533cd84489f2cab26e93dea,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4708,6 +4714,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2250375731996542718, guid: 1eafbc21e533cd84489f2cab26e93dea,
+        type: 3}
+      propertyPath: speed
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eafbc21e533cd84489f2cab26e93dea, type: 3}
