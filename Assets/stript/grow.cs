@@ -9,8 +9,12 @@ public class grow : MonoBehaviour
     public Vector3 big;
 
 	public Vector3 small;
-    // Start is called before the first frame update
-    void Start()
+
+	public float masssmall;
+	public float massbig;
+	public Rigidbody rb;
+
+	void Start()
     {
         
     }
@@ -23,6 +27,8 @@ public class grow : MonoBehaviour
 			transform.localScale = big;
 			bigCube = true;
 			Debug.Log("grow");
+			rb = GetComponent<Rigidbody>();
+			rb.mass = massbig;
 		}
 	 
         else if (Input.GetKeyDown(KeyCode.Space) && bigCube)
@@ -30,6 +36,8 @@ public class grow : MonoBehaviour
 			bigCube = false;
 			transform.localScale = small;
 			Debug.Log("shrink");
+			rb = GetComponent<Rigidbody>();
+			rb.mass = masssmall;
 		}
 	}
 
