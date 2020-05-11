@@ -409,6 +409,16 @@ PrefabInstance:
       propertyPath: speed
       value: 150
       objectReference: {fileID: 0}
+    - target: {fileID: 3263232506072807969, guid: 098a522242e0422498bd5353291a1113,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263232506072807969, guid: 098a522242e0422498bd5353291a1113,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3263232506072807971, guid: 098a522242e0422498bd5353291a1113,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -464,6 +474,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3263232506072807980, guid: 098a522242e0422498bd5353291a1113,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 102c2079e43de0348a5f7f9433d69cb3,
+        type: 2}
     - target: {fileID: 3263232506072807983, guid: 098a522242e0422498bd5353291a1113,
         type: 3}
       propertyPath: m_Name
