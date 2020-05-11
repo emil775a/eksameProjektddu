@@ -133,6 +133,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2250375731996542706, guid: 1eafbc21e533cd84489f2cab26e93dea,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 7968db931e17e8f4187710302041b998,
+        type: 2}
     - target: {fileID: 2250375731996542717, guid: 1eafbc21e533cd84489f2cab26e93dea,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -478,7 +484,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 13400000, guid: 102c2079e43de0348a5f7f9433d69cb3,
+      objectReference: {fileID: 13400000, guid: 7968db931e17e8f4187710302041b998,
         type: 2}
     - target: {fileID: 3263232506072807983, guid: 098a522242e0422498bd5353291a1113,
         type: 3}
@@ -597,6 +603,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1360248029}
   m_PrefabAsset: {fileID: 0}
+--- !u!54 &1774789744 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 3263232506072807969, guid: 098a522242e0422498bd5353291a1113,
+    type: 3}
+  m_PrefabInstance: {fileID: 1360248029}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1774789748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -612,6 +624,24 @@ MonoBehaviour:
   speed: 150
   horizontalInput: Horizontal2
   verticalInput: Vertical2
+--- !u!114 &1774789749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774789743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70560916d38216548949e23558458743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  big: {x: 2, y: 2, z: 2}
+  small: {x: 1, y: 1, z: 1}
+  masssmall: 0
+  massbig: 0
+  rb: {fileID: 1774789744}
+  growButton: joystick button 1
 --- !u!1 &2035764665
 GameObject:
   m_ObjectHideFlags: 0

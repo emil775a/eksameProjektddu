@@ -13,6 +13,7 @@ public class grow : MonoBehaviour
 	public float masssmall;
 	public float massbig;
 	public Rigidbody rb;
+    public string growButton = "joystick button 0";
 
 	void Start()
     {
@@ -22,7 +23,7 @@ public class grow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if (Input.GetKeyDown(KeyCode.Space) && !bigCube)
+		if (Input.GetKeyDown(growButton) && !bigCube)
 		{
 			transform.localScale = big;
 			bigCube = true;
@@ -31,7 +32,7 @@ public class grow : MonoBehaviour
 			rb.mass = massbig;
 		}
 	 
-        else if (Input.GetKeyDown(KeyCode.Space) && bigCube)
+        else if (Input.GetKeyDown(growButton) && bigCube)
 		{
 			bigCube = false;
 			transform.localScale = small;
