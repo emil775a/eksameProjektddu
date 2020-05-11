@@ -6,9 +6,7 @@ public class grow : MonoBehaviour
 {
 	bool bigCube = false;
 
-    public Vector3 medium;
-
-	public Vector3 big;
+    public Vector3 big;
 
 	public Vector3 small;
     // Start is called before the first frame update
@@ -20,28 +18,22 @@ public class grow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
 		if (Input.GetKeyDown(KeyCode.Space) && !bigCube)
-		{
-			transform.localScale = medium;
-			bigCube = true;
-			
-		}
-		else if (Input.GetKeyDown(KeyCode.Space) && bigCube)
 		{
 			transform.localScale = big;
 			bigCube = true;
-			
+			Debug.Log("grow");
 		}
 	 
-        if (Input.GetKeyDown(KeyCode.Space) && bigCube)
+        else if (Input.GetKeyDown(KeyCode.Space) && bigCube)
 		{
 			bigCube = false;
 			transform.localScale = small;
 			Debug.Log("shrink");
 		}
+	}
 
 }
-}
 
+	
 
