@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - ground
+  - PlayerCam
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - squarepasse
   - cirkelpasse
   - skub
-  - door
+  - Ground
   - 
   - 
   - 
