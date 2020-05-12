@@ -4,17 +4,28 @@ using UnityEngine;
 
 public class doorTrigger : MonoBehaviour
 {
-    public Material[] material;
-    public Color myColor;
-    public GameObject door;
-    public GameObject player1;
+    public GameObject cube;
     private Renderer rend;
 
-    private void OnTriggerEnter(Collider other)
+    // Use this for initialization
+    void Start()
     {
-        if (other.gameObject.name== "player1")
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        // This will get the OBJECT to CHANGE COLOR on KEY PRESS
+        if (Input.GetKeyDown(KeyCode.R))
+            GetComponent<Renderer>().material.color = Color.red;
+        print("A Key Pressed For Red Color");
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.name == "Cube")
         {
-            myColor = Color.white;
+            transform.parent.GetComponent<Renderer>().material.color = Color.red;
         }
     }
 
