@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class respawn : MonoBehaviour
 {
+	[SerializeField]
+	GameObject door;
 	private void OnTriggerEnter(Collider col)
 	{
-		GameControlScript.health -= 1;
+		door.transform.position = new Vector3(17, 5, -11);
 	}
 }
-
-
