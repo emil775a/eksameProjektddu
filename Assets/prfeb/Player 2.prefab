@@ -125,8 +125,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 250
-  horizontalInput: Horizontal2
-  verticalInput: Vertical2
+  horizontalInput: Horizontal
+  verticalInput: Vertical
 --- !u!114 &-8738020119384081265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,3 +139,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b7038df82ea66d429a22c02b9bc04e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpForce: 7.5
