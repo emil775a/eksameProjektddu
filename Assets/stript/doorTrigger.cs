@@ -4,10 +4,18 @@ using UnityEngine;
 
 public class doorTrigger : MonoBehaviour
 {
-    [SerializeField]
-    GameObject door;
-    private void OnTriggerEnter(Collider col)
+    public Material[] material;
+    public Color myColor;
+    public GameObject door;
+    public GameObject player1;
+    private Renderer rend;
+
+    private void OnTriggerEnter(Collider other)
     {
-        door.transform.position += new Vector3(0, -4, 0);
+        if (other.gameObject.name== "player1")
+        {
+            myColor = Color.white;
+        }
     }
+
 }
