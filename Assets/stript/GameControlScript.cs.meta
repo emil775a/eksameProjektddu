@@ -4,8 +4,7 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - player1: {fileID: 2707956081294963859, guid: e619ea9499888e149b878886a7d268a9,
-      type: 3}
+  - player1: {instanceID: 0}
   - player2: {instanceID: 0}
   - squareheart1: {instanceID: 0}
   - squareheart2: {instanceID: 0}
