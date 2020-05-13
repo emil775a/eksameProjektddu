@@ -5,9 +5,21 @@ using UnityEngine;
 public class respawn : MonoBehaviour
 {
 	[SerializeField]
-	GameObject door;
+
+	GameObject player;
+
+	[SerializeField]
+	GameObject players;
+
+	public new Vector3 player1;
+
+	public new Vector3 player2;
+
 	private void OnTriggerEnter(Collider col)
+       
 	{
-		door.transform.position = new Vector3(17, 5, -11);
+		player.transform.position = player1;
+
+		players.transform.position = player2;
 	}
 }
