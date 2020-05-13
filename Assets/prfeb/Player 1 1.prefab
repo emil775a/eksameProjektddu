@@ -193,8 +193,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 750
-  horizontalInput: Horizontal
-  verticalInput: Vertical
+  horizontalInput: Horizontal2
+  verticalInput: Vertical2
 --- !u!54 &2707956081294963869
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -225,3 +225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   big: {x: 2, y: 2, z: 2}
   small: {x: 1, y: 1, z: 1}
+  masssmall: 0
+  massbig: 0
+  rb: {fileID: 0}
+  growButton: joystick button 0
