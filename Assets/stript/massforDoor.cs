@@ -16,7 +16,7 @@ public class massforDoor : MonoBehaviour
     // Update is called once per frame
     private void OnTriggerEnter(Collider col)
     {
-        rb = GetComponent<Rigidbody>();
+      
         rb.mass = mass;
     }
 }
