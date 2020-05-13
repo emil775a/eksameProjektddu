@@ -2255,12 +2255,22 @@ PrefabInstance:
     - target: {fileID: 93964951250361612, guid: 63d871bf5ba23b541bb762455a7bc5de,
         type: 3}
       propertyPath: airSpeed
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1786649845040686962, guid: 63d871bf5ba23b541bb762455a7bc5de,
         type: 3}
       propertyPath: m_Name
       value: Player 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786649845040686972, guid: 63d871bf5ba23b541bb762455a7bc5de,
+        type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786649845040686972, guid: 63d871bf5ba23b541bb762455a7bc5de,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1786649845040686974, guid: 63d871bf5ba23b541bb762455a7bc5de,
         type: 3}

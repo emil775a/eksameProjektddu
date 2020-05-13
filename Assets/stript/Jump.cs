@@ -49,6 +49,14 @@ public class Jump : MonoBehaviour
         }
     }
 
+    private void OnCollisionStay(Collision other)
+    {
+        if (other.gameObject.CompareTag("ground"))
+        {
+            onGround = true;
+        }
+    }
+
     private void OnCollisionExit(Collision other)
     {
         if (other.gameObject.CompareTag("ground"))

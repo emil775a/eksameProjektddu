@@ -10,6 +10,6 @@ public class BallTriggerEvent : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        target.GetComponent<Renderer>().material.color = Color.green;
+        target.GetComponent<Renderer>().material.color = Color.magenta;
     }
 }
