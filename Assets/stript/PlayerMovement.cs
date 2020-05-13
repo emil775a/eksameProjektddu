@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        while (onGround == true)
+        if (onGround == true)
         {
 
             float x = Input.GetAxis(horizontalInput) * (speed * Time.deltaTime);

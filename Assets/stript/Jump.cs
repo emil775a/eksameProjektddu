@@ -37,7 +37,7 @@ public class Jump : MonoBehaviour
         {
             onGround = true;
         }
-        while (onGround != true)
+        if (onGround != true)
         {
             float x = Input.GetAxis(horizontalInput) * (airSpeed * Time.deltaTime);
             float z = Input.GetAxis(verticalInput) * (airSpeed * Time.deltaTime);
