@@ -237,12 +237,12 @@ PrefabInstance:
     - target: {fileID: 2250375731996542718, guid: 1eafbc21e533cd84489f2cab26e93dea,
         type: 3}
       propertyPath: horizontalInput
-      value: Horizontal
+      value: Horizontal2
       objectReference: {fileID: 0}
     - target: {fileID: 2250375731996542718, guid: 1eafbc21e533cd84489f2cab26e93dea,
         type: 3}
       propertyPath: verticalInput
-      value: Vertical
+      value: Vertical2
       objectReference: {fileID: 0}
     - target: {fileID: 2250375731996542718, guid: 1eafbc21e533cd84489f2cab26e93dea,
         type: 3}
@@ -643,8 +643,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3124c2fb629f204d8ee7aaec3b75146, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Sensitivity: 50
-  playerBody: {fileID: 1541620010}
 --- !u!81 &1605607133
 AudioListener:
   m_ObjectHideFlags: 0
@@ -696,37 +694,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!1 &1774789743 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3263232506072807983, guid: 098a522242e0422498bd5353291a1113,
-    type: 3}
-  m_PrefabInstance: {fileID: 1360248029}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &1774789744 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 3263232506072807969, guid: 098a522242e0422498bd5353291a1113,
-    type: 3}
-  m_PrefabInstance: {fileID: 1360248029}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1774789749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1774789743}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70560916d38216548949e23558458743, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  big: {x: 2, y: 2, z: 2}
-  small: {x: 1, y: 1, z: 1}
-  masssmall: 1
-  massbig: 50
-  rb: {fileID: 1774789744}
-  growButton: joystick button 1
-  transformSpeed: 1
 --- !u!1 &2035764665
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,5 +790,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96790a17d74f1274f80d5638d8e36bbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Sensitivity: 50
-  playerBody: {fileID: 825890373}

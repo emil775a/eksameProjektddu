@@ -49,12 +49,4 @@ public class Jump : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit(Collision other)
-    {
-        if (other.gameObject.CompareTag("ground"))
-        {
-            onGround = false;
-            playerMovement.speed = airSpeed;
-        }
-    }
 }

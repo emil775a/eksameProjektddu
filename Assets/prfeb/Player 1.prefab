@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3263232506072807980}
   - component: {fileID: 3263232506072807968}
   - component: {fileID: 3263232506072807969}
+  - component: {fileID: 5607302082864498380}
   m_Layer: 8
   m_Name: Player 1
   m_TagString: Untagged
@@ -108,8 +109,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 250
-  horizontalInput: Horizontal2
-  verticalInput: Vertical2
+  horizontalInput: Horizontal
+  verticalInput: Vertical
 --- !u!54 &3263232506072807969
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -126,3 +127,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &5607302082864498380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3263232506072807983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70560916d38216548949e23558458743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  big: {x: 2, y: 2, z: 2}
+  small: {x: 1, y: 1, z: 1}
+  masssmall: 1
+  massbig: 50
+  rb: {fileID: 3263232506072807969}
+  growButton: space
+  transformSpeed: 1
