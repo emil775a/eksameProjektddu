@@ -10,8 +10,10 @@ public class Jump : MonoBehaviour
     public float jumpForce = 7.5f; 
     private bool onGround;
     public float airSpeed = 100f;
-    public string horizontalInput = "Horizontal";
-    public string verticalInput = "Vertical";
+    float orgSpeed;
+    
+    PlayerMovement playerMovement;
+
     void Start()
     {
         foreach (var e in Input.GetJoystickNames())
@@ -21,6 +23,8 @@ public class Jump : MonoBehaviour
 //        Debug.Log(Input. ().Length);
         player = GetComponent<Rigidbody>();
         onGround = true;
+        playerMovement = GetComponent<PlayerMovement>();
+        orgSpeed = playerMovement.speed;
     }
 
     void Update()
@@ -28,6 +32,7 @@ public class Jump : MonoBehaviour
         if (Input.GetButtonDown("JumpController") && onGround == true)
         {
             player.velocity = new Vector3(0f, jumpForce, 0f);
+            onGround = false;
         }
     }
 
@@ -36,13 +41,20 @@ public class Jump : MonoBehaviour
         if (other.gameObject.CompareTag("ground"))
         {
             onGround = true;
+            playerMovement.speed = orgSpeed;
         }
-        if (onGround != true)
+        if (onGround == false)
         {
-            float x = Input.GetAxis(horizontalInput) * (airSpeed * Time.deltaTime);
-            float z = Input.GetAxis(verticalInput) * (airSpeed * Time.deltaTime);
+            playerMovement.speed = airSpeed;
+        }
+    }
 
-            player.velocity = new Vector3(x, player.velocity.y, z);
+    private void OnCollisionExit(Collision other)
+    {
+        if (other.gameObject.CompareTag("ground"))
+        {
+            onGround = false;
+            playerMovement.speed = airSpeed;
         }
     }
 }
