@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     Rigidbody rb;
 
+    private bool onGround;
     public float speed = 12f;
     public string horizontalInput = "Horizontal";
     public string verticalInput = "Vertical";
@@ -18,10 +19,20 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float x = Input.GetAxis(horizontalInput) * (speed * Time.deltaTime);
-        float z = Input.GetAxis(verticalInput) * (speed * Time.deltaTime);
+        while (onGround == true)
+        {
 
-        rb.velocity = new Vector3(x, rb.velocity.y, z);
+            float x = Input.GetAxis(horizontalInput) * (speed * Time.deltaTime);
+            float z = Input.GetAxis(verticalInput) * (speed * Time.deltaTime);
+
+            rb.velocity = new Vector3(x, rb.velocity.y, z);
+        }
     }
-
+    void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("ground"))
+        {
+            onGround = true;
+        }
+    }
 }
