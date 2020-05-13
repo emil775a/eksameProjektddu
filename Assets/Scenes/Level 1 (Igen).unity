@@ -60144,7 +60144,7 @@ PrefabInstance:
     - target: {fileID: 2250375731996542705, guid: 1eafbc21e533cd84489f2cab26e93dea,
         type: 3}
       propertyPath: m_Name
-      value: Player 2 (1)
+      value: Player 2
       objectReference: {fileID: 0}
     - target: {fileID: 2250375731996542717, guid: 1eafbc21e533cd84489f2cab26e93dea,
         type: 3}
@@ -60201,7 +60201,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 1eafbc21e533cd84489f2cab26e93dea, type: 3}
 --- !u!1 &1743213281
 GameObject:
