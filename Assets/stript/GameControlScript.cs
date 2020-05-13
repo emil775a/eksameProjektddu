@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class GameControlScript : MonoBehaviour
 {
-	public GameObject heart1, heart2, heart3, gameOver;
+    public GameObject player1;
+    public GameObject player2;
+	public GameObject squareheart1, squareheart2, squareheart3, cirkelwins;
 	public static int health;
 
     void Start()
     {
 		health = 3;
-		heart1.gameObject.SetActive(true);
-		heart2.gameObject.SetActive(true);
-		heart3.gameObject.SetActive(true);
-        gameOver.gameObject.SetActive(false);
+        squareheart1.gameObject.SetActive(true);
+        squareheart2.gameObject.SetActive(true);
+        squareheart3.gameObject.SetActive(true);
+        cirkelwins.gameObject.SetActive(false);
 	}
 
     // Update is called once per frame
@@ -25,28 +27,28 @@ public class GameControlScript : MonoBehaviour
         switch (health)
 		{
 			case 3:
-				heart1.gameObject.SetActive(true);
-				heart2.gameObject.SetActive(true);
-				heart3.gameObject.SetActive(true);
+                squareheart1.gameObject.SetActive(true);
+                squareheart2.gameObject.SetActive(true);
+                squareheart3.gameObject.SetActive(true);
 				break;
 
 			case 2:
-				heart1.gameObject.SetActive(true);
-				heart2.gameObject.SetActive(true);
-				heart3.gameObject.SetActive(false);
+                squareheart1.gameObject.SetActive(true);
+                squareheart2.gameObject.SetActive(true);
+                squareheart3.gameObject.SetActive(false);
 				break;
 
 			case 1:
-				heart1.gameObject.SetActive(true);
-				heart2.gameObject.SetActive(false);
-				heart3.gameObject.SetActive(false);
+                squareheart1.gameObject.SetActive(true);
+                squareheart2.gameObject.SetActive(false);
+                squareheart3.gameObject.SetActive(false);
 				break;
 
 			case 0:
-				heart1.gameObject.SetActive(false);
-				heart2.gameObject.SetActive(false);
-				heart3.gameObject.SetActive(false);
-				gameOver.gameObject.SetActive(true);
+                squareheart1.gameObject.SetActive(false);
+                squareheart2.gameObject.SetActive(false);
+                squareheart3.gameObject.SetActive(false);
+				cirkelwins.gameObject.SetActive(true);
 				Time.timeScale = 0;
 				break;
 		}

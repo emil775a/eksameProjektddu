@@ -23,9 +23,16 @@ public class grow : MonoBehaviour
 	public float transformSpeed = 1f;
 	bool growingOrShrinke = false;
 	float fractionOfTime = 0;
-	void Start()
+
+
+    public float SmallSpeed = 750f;
+    public float BigSpeed = 100f;
+    float orgSpeed;
+    PlayerMovement playerMovement;
+    void Start()
     {
-        
+        playerMovement = GetComponent<PlayerMovement>();
+        orgSpeed = playerMovement.speed;
     }
 
     // Update is called once per frame
@@ -63,7 +70,16 @@ public class grow : MonoBehaviour
 			transform.localScale = Vector3.Lerp(minimum, maximum, fractionOfTime);
 
 		}
-	}
+        if (bigCube == true)
+        {
+            playerMovement.speed = BigSpeed;
+        }
+        else if (bigCube == false)
+            {
+                playerMovement.speed = SmallSpeed;
+            }
+
+    }
 
 }
 

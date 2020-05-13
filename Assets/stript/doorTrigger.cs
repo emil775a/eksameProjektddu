@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class doorTrigger : MonoBehaviour
 {
-	public float massbig;
-	public Rigidbody rb;
-	
+
+    [SerializeField]
+
+    GameObject nyplatform;
 
 
-	void OnTriggerEnter(Collider other)
+    public new Vector3 location;
+
+    void OnTriggerEnter(Collider other)
 	{
-		
-		rb.mass = massbig;
-		Debug.Log("mass call");
-	}
+
+        nyplatform.transform.position = location;
+
+    }
 
 
 }
