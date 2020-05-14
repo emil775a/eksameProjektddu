@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class grow : MonoBehaviour
+public class GrowSlippery : MonoBehaviour
 {
 	Vector3 minimum;
 	Vector3 maximum;
@@ -28,10 +28,10 @@ public class grow : MonoBehaviour
     public float SmallSpeed = 750f;
     public float BigSpeed = 100f;
     float orgSpeed;
-    PlayerMovement playerMovement;
+    PlayerMovementSlippery playerMovement;
     void Start()
     {
-        playerMovement = GetComponent<PlayerMovement>();
+        playerMovement = GetComponent<PlayerMovementSlippery>();
         orgSpeed = playerMovement.speed;
     }
 
@@ -42,12 +42,12 @@ public class grow : MonoBehaviour
 		{
 			startTime = Time.time;
 			growingOrShrinke = true;
-			bigCube = true;
+			maximum = big;
+			minimum = transform.localScale;
 
-            maximum = big;
-            minimum = transform.localScale;
-            transform.localScale = big;
-            Debug.Log("grow");
+			transform.localScale = big;
+			bigCube = true;
+			Debug.Log("grow");
 			rb = GetComponent<Rigidbody>();
 			rb.mass = massbig;
 			Time.timeScale = 1;
