@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Jump : MonoBehaviour
+public class JumpSlippery : MonoBehaviour
 {
 
     Rigidbody player;
@@ -12,7 +12,7 @@ public class Jump : MonoBehaviour
     public float airSpeed = 100f;
     float orgSpeed;
     
-    PlayerMovement playerMovement;
+    PlayerMovementSlippery playerMovement;
 
     void Start()
     {
@@ -23,7 +23,7 @@ public class Jump : MonoBehaviour
 //        Debug.Log(Input. ().Length);
         player = GetComponent<Rigidbody>();
         onGround = true;
-        playerMovement = GetComponent<PlayerMovement>();
+        playerMovement = GetComponent<PlayerMovementSlippery>();
         orgSpeed = playerMovement.speed;
     }
 
