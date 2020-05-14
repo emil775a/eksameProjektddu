@@ -42,12 +42,12 @@ public class grow : MonoBehaviour
 		{
 			startTime = Time.time;
 			growingOrShrinke = true;
-			maximum = big;
-			minimum = transform.localScale;
-
-			transform.localScale = big;
 			bigCube = true;
-			Debug.Log("grow");
+
+            maximum = big;
+            minimum = transform.localScale;
+            transform.localScale = big;
+            Debug.Log("grow");
 			rb = GetComponent<Rigidbody>();
 			rb.mass = massbig;
 			Time.timeScale = 1;
