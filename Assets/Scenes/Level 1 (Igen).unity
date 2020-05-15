@@ -55663,7 +55663,7 @@ PrefabInstance:
     - target: {fileID: 638881237868297768, guid: e619ea9499888e149b878886a7d268a9,
         type: 3}
       propertyPath: massbig
-      value: 80
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 638881237868297768, guid: e619ea9499888e149b878886a7d268a9,
         type: 3}
@@ -61641,7 +61641,7 @@ PrefabInstance:
     - target: {fileID: 2250375731996542718, guid: 1eafbc21e533cd84489f2cab26e93dea,
         type: 3}
       propertyPath: speed
-      value: 600
+      value: 750
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
